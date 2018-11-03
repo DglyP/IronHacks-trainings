@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>JavaScript Functions</h2>
-
-<p>The global function (myFunction) returns the product of the arguments (a ,b):</p>
-
-<p id="demo"></p>
-
-<script>
-function myFunction(a, b) {
-    return a * b;
-}
-document.getElementById("demo").innerHTML = myFunction(10, 2); 
-</script>
-
-</body>
+    
+<!--    Header for imports-->
+    <head>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    </head>
+    
+<!--    Body to actually display data-->
+    <body>
+<!--        Title-->
+        <h2> Training 2 Javascript!</h2>
+<!--        The HTML element that we want to change-->
+        <p id="demo" ></p>
+    </body>
+    
+<!--    Inner Javascript on HTML -->
+    <script>
+//        The function we want to work with
+        function myFunction(a,b){
+            return a * b;
+        }
+//        Once the element is identified, we want to change its content
+        document.getElementById("demo").innerHTML = myFunction(20, 4);
+    </script>
+    
 </html>
-
-
